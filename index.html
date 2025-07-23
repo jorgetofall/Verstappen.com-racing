@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verstappen.com Racing</title>
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">Verstappen</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stats">Stast</a></li>
+          <li><a href="#race">Calendar</a></li>
+          <li><a href="#contact">social</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Max Verstappen</h1>
+        <p>Formula 1 World Champion | Red Bull Racing</p>
+        <a href="#about" class="cta-btn">About Max</a>
+        <a href="#stats" class="cta-btn">View Stats</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About Max Verstappen</h2>
+      <p>
+        Max Verstappen is a professional Formula 1 racing driver from the
+        Netherlands, currently competing for the Oracle Red Bull Racing Team.
+        Born on September 30, 1997, in Hasselt, Belgium, he is the son of former
+        F1 driver Jos Verstappen. Max made his Formula 1 debut in 2015 with
+        Scuderia Toro Rosso, becoming the youngest driver in F1 history at just
+        17 years old.
+      </p>
+      <p>
+        In 2016, he was promoted to Red Bull Racing and won his first Grand Prix
+        in Spain, making history once again as the youngest race winner in the
+        sport. Known for his aggressive driving style, technical skill, and
+        relentless determination, Verstappen has rapidly become one of the most
+        dominant figures in modern Formula 1.
+      </p>
+      <p>
+        Throughout his career, Max has broken numerous records and achieved
+        multiple World Championship titles. His talent, consistency, and
+        competitive spirit continue to captivate fans and reshape the future of
+        Formula 1 racing.
+      </p>
+    </section>
+
+    <section class="section" id="stats">
+      <h2 id="section-title">Championship Stats</h2>
+      <div class="stats-grid">
+        <div class="stats-card">
+          <span class="stats-number">4</span>
+          <span class="stats-label">World Championship</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">65</span>
+          <span class="stats-label">Race Wins</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">117</span>
+          <span class="stats-label">Podiums</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">43</span>
+          <span class="stats-label">Pole Position</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">34</span>
+          <span class="stats-label">Fastest Laps</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">2024</span>
+          <span class="stats-label">Latest Championship</span>
+        </div>
+        <div class="stats-card">
+          <span class="stats-number">33</span>
+          <span class="stats-label">DNFs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="race">
+      <h2 class="section-title">2025 Race Calendar F1</h2>
+      <div class="race-grid">
+        <div class="race-card">
+          <div class="race-round">ROUND 12</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Great Britain</div>
+          <div class="race-name">
+            FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025
+          </div>
+          <div class="race-date">04 - 06 JUL</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 13</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Belgium</div>
+          <div class="race-name">
+            FORMULA 1 MOET & CHANDON BELGIAN GRAND PRIX 2025
+          </div>
+          <div class="race-date">25 - 27 JUL</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 14</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Hungary</div>
+          <div class="race-name">
+            FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025
+          </div>
+          <div class="race-date">1 - 3 AUG</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 15</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Netherlands</div>
+          <div class="race-name">FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025</div>
+          <div class="race-date">29 - 21 AUG</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 16</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Italy</div>
+          <div class="race-name">
+            FORMULA 1 PIRELLI GRAND PREMIO D'ITALIA 2025
+          </div>
+          <div class="race-date">05 - 07 SEP</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 17</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Azerbaijan</div>
+          <div class="race-name">
+            FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025
+          </div>
+          <div class="race-date">19 - 21 SEP</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 18</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Singapore</div>
+          <div class="race-name">
+            FORMULA 1 SINGAPORE AIRLANES SINGAPORE GRAND PRIX 2025
+          </div>
+          <div class="race-date">03 - 05 OCT</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 19</div>
+          <div class="race-flag"></div>
+          <div class="race-location">United States</div>
+          <div class="race-name">
+            FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025
+          </div>
+          <div class="race-date">17 - 19 0CT</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 20</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Mexico</div>
+          <div class="race-name">
+            FORMULA 1 GRAND PREMIO DE LA CIUDAD MEXICO 2025
+          </div>
+          <div class="race-date">24 - 26 OCT</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 21</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Brazil</div>
+          <div class="race-name">
+            FORMULA 1 MSC CRUISES GRANDE PREMIO DE SAO PAULO 2025
+          </div>
+          <div class="race-date">07 - 09 NOV</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 22</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Las Vegas</div>
+          <div class="race-name">
+            FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025
+          </div>
+          <div class="race-date">20 - 22 NOV</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 23</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Qatar</div>
+          <div class="race-name">
+            FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025
+          </div>
+          <div class="race-date">28 - 30 NOV</div>
+        </div>
+        <div class="race-card">
+          <div class="race-round">ROUND 24</div>
+          <div class="race-flag"></div>
+          <div class="race-location">Abu Dhabi</div>
+          <div class="race-name">
+            FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025
+          </div>
+          <div class="race-date">05 - 07 DEC</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="sosial-links">
+        <a
+          href="https://www.instagram.com/maxverstappen1/"
+          target="_blank"
+          class="sosial-link"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="https://twitter.com/Max33Verstappen"
+          target="_blank"
+          class="sosial-link"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/maxverstappenofficial/"
+          target="_blank"
+          class="sosial-link"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+    </section>
+
+    <div class="footer-ceunah">
+      <p>&copy; 2025 Max Verstappen. All rights reserved.</p>
+      <p>
+        <a href="#privacy" style="color: #888; text-decoration: none"
+          >Privacy Policy</a
+        >
+        |
+        <a href="#terms" style="color: #888; text-decoration: none"
+          >Terms of Service</a
+        >
+        |
+        <a href="#cookies" style="color: #888; text-decoration: none"
+          >Cookie Policy</a
+        >
+      </p>
+      <p style="font-size: 0.8em; margin-top: 10px">
+        "Simply lovely" - The love of my life
+      </p>
+    </div>
+
+    <div class="speedometer-container">
+      <div class="needle" id="needle"></div>
+      <div class="speed-label" id="speedLabel">0%</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+html {
+  scroll-behavior: auto !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #04132e;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ffcb05;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #df0a0a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: #ffcb05;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.nav-links a:hover {
+  color: goldenrod;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffcb05;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ffcb05;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #df0a0a;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero a:hover {
+  background: #ffcb05;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffcb05;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(252, 252, 252, 0.507);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcb05;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcb05;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.stats-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.stats-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.race-grid {
+  background-color: #04132e;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.race-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.race-card {
+  background-color: #102b56;
+  border: 1px solid #1f3f73;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.race-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.race-round {
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.race-location {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.race-name {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+  margin-bottom: 0.6rem;
+}
+
+.race-date {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .race-gird {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sosial-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.sosial-link {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sosial-link:hover {
+  background-color: #ffcb05;
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.sosial-link img {
+  width: 26px;
+  height: 26px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-ceunah {
+  background: #102b56;
+  border-top: 2px solid #ffcb05;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-ceunah p {
+  margin: 0.8rem 0;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer-ceunah p:first-child {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffcb05;
+  margin-bottom: 1rem;
+}
+
+.footer-ceunah p a {
+  color: #ffcb05;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-ceunah p a:hover {
+  color: #ffffff;
+}
+
+.footer-ceunah p:last-child {
+  font-style: italic;
+  color: #df0a0a;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 203, 5, 0.3);
+}
+
+@media (max-width: 768px) {
+  .sosial-links {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .sosial-link {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .sosial-link img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-ceunah {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-ceunah p {
+    font-size: 0.8rem;
+  }
+}
+
+.speedometer-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 100px;
+  background: radial-gradient(circle at bottom center, #102b56 40%, #000);
+  border: 4px solid #ff0000;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom: none;
+  box-shadow: 0 0 12px #ff0000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.needle {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  height: 90px;
+  background: #ff0000;
+  transform-origin: bottom center;
+  transform: rotate(-90deg);
+  transition: transform 0.1s ease-out;
+}
+
+.speed-label {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcb05;
+  text-shadow: 0 0 5px #000;
+}
+
+.tick {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #ffffff;
+  transform-origin: bottom center;
+  bottom: 0;
+}
+
+.tick-label {
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  transform: translate(-50%, 0);
+  text-shadow: 0 0 3px #000;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #04132e;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .mobile-menu span {
+    width: 25px;
+    height: 3px;
+    background: #ffcb05;
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .race-card {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .race-name {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .speedometer-container {
+    transform: scale(0.8);
+    right: 10px;
+    bottom: 10px;
+  }
+}
